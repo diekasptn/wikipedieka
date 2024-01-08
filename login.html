@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-left">
+            <button id="menu-icon" class="btn-kiri-logo">&#9776;</button>
+            <img src="assets/logo-wikipedia.svg" alt="Wikipedia Logo">
+            <img src="assets/logo-kanan.png" alt="Another Logo" style="width: fit-content;">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search Wikipedia">
+                <button type="button" class="search-button">Search</button>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="register.html">Create Account</a>
+            <a href="index.html">Login</a>
+        </div>
+    </header>
+</div>
+<div class="form">
+    <div class="header-form">
+        <h1>Log in</h1>
+    </div>
+    <hr>
+    <h3>Tools</h3>
+    <hr>
+    <div class="main-form">
+        <form action="login.php" method="post">
+            <label for="username">Username</label>
+            <br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br>
+            <div class="check">
+                <input type="checkbox" class="checkbox" style>
+            </div>
+            <label class="tahan">Keep me logged in (for up to one year)</label>
+            <br>
+            <br>
+            <button class="btn-login" type="submit">Login</button>
+            <br>
+            <br>
+            <label class="help-log">Help with logging in</label>
+            <br>
+            <br>
+            <label class="help-log-2">Forgot your password?</label>
+            <br>
+            <br>
+            <img src="assets/man-removebg-preview.png" class="img-org">
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-left">
+            <button id="menu-icon" class="btn-kiri-logo">&#9776;</button>
+            <img src="assets/logo-wikipedia.svg" alt="Wikipedia Logo">
+            <img src="assets/logo-kanan.png" alt="Another Logo" style="width: fit-content;">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search Wikipedia">
+                <button type="button" class="search-button">Search</button>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="register.html">Create Account</a>
+            <a href="index.html">Login</a>
+        </div>
+    </header>
+</div>
+<div class="form">
+    <div class="header-form">
+        <h1>Create account</h1>
+    </div>
+    <hr>
+    <h3>Tools</h3>
+    <hr>
+    <div class="main-form">
+        <form action="register.php" method="post">
+            <label for="username">Username</label>
+            <br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <br>
+            <label>Your username is public and cannod be made private later.</label>
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br>
+            <label>It is recommended to use a unique password that you are not using on any other website</label>
+            <br>
+            <br>
+            <label for="confirm-password">Confirm Password</label>
+            <br>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter your password again" required>
+            <br>
+            <label for="email">Email address (recommended)</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <br>
+            <label>Email is required to recover your account if you lose your password.</label>
+            <br>
+            <label>To protect the wiki against automated account creation, we kindly ask you to enter the words that appear below in the box </label>
+            <a href="#">(more info):</a>
+            <br>
+            <br>
+            <label>CAPTCHA Security Check</label>
+            <br>
+            <br>
+            <button class="btn-login" type="submit">Create your account</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
